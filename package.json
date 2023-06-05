@@ -1,6 +1,6 @@
 {
   "name": "expressportfolio",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node server"
@@ -13,5 +13,18 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
-  }
+  },
+  "description": "Express Portfolio Assignment 1 COMP 229",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cksanto/czarina-portfolio.git"
+  },
+  "author": "Czarina Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cksanto/czarina-portfolio/issues"
+  },
+  "homepage": "https://github.com/cksanto/czarina-portfolio#readme"
 }
