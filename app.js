@@ -1,19 +1,21 @@
-let createError = require('http-errors');
-let express = require('express');
+// loads packages
+let createError = require('http-errors'); // handles http errors
+let express = require('express'); // load
 let path = require('path');
 let cookieParser = require('cookie-parser');
-let logger = require('morgan');
+let logger = require('morgan'); 
 
+// routers
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
 
-let app = express();
+let app = express(); // initialize
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.use(logger('dev'));
+app.use(logger('dev')); // security
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
