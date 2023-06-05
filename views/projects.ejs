@@ -1,0 +1,38 @@
+<%- include partials/header.ejs %>
+<%- include partials/nav_bar.ejs %>
+
+<h1 class="center">My Projects</h1>
+
+    <p class="center">
+      Below are some of the projects I am most proud of, both personal and school assignments.
+    </p>
+
+    <div class="card-container center">
+        <div class="card">
+            <img class ='card-image'src="/Assets/images/portfolio.jpg" alt="portfolio">
+            <h2 class="card-title">My Portfolio</h2>
+            <p class="card-description">My most recent project, I use EJS to develop my website,
+                and show off my technical skills and design.
+            </p>
+            <a href="/home" class="card-link" target="_blank">Link to website</a>
+        </div>
+        <div class="card">
+            <img class ='card-image'src="/Assets/images/idbeauty.png" alt="idbeauty">
+            <h2 class="card-title">idbeauty</h2>
+            <p class="card-description">A website created by my team and I for the SheHacks hack-a-thon in January of 2023.
+                The idea behind the website uses the Co:here API language model to analyze and classify text relating to makeup
+                styles. I worked as the lead developer.
+            </p>
+            <a href="https://devpost.com/software/idbeauty" class="card-link" target="_blank">Link To Devpost Submission</a>
+        </div>
+        <div class="card">            
+            <img class ='card-image'src="/Assets/images/slideshow.jpg" alt="slideshow">
+            <h2 class="card-title">Slideshow Carousel</h2>
+            <p class="card-description">An assignment from my second semester, my Slideshow
+                website showcases my basic JavaScript skills.
+            </p>
+            <a href="http://studentweb.cencol.ca/csanto34/Slideshow/js05_txt.html" class="card-link" target="_blank">Link to website</a>
+        </div>
+    </div>
+
+    <%- include partials/footer.ejs %>

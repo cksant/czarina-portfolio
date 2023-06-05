@@ -1,0 +1,40 @@
+<%- include partials/header.ejs %>
+<%- include partials/nav_bar.ejs %>
+
+<h1 class="center">Contact Me</h1>
+<p class="center">Feel free to contact me for any inquiries!
+</p>
+<p class="center notreal">Note: Form is currently under construction. Click the LinkedIn logo to visit my LinkedIn
+    page and contact me there!
+</p>
+
+<form>
+    <div class="mb-3">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" required>
+    </div>
+    <div class="mb-3">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" required>
+    </div>
+    <div class="mb-3">
+        <label for="phone">Phone Number</label>
+        <input type="tel" class="form-control" id="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <div id="phoneHelp" class="form-text">Example: 123-456-7890</div>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="message">Message</label>
+        <input type="textbox" class="form-control" id="message" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <a href="https://www.linkedin.com/in/czarina-s-7579b3249/" target="_blank">
+    <img id="linkedin" src="/Assets/images/LinkedIn.png" alt="linkedin">
+</a>
+ 
+<%- include partials/footer.ejs %>
