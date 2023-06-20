@@ -26,11 +26,11 @@ router.get("/contact", function (req, res, next) {
   res.render("contact", { title: "Contact" });
 });
 
-router.get("/contact", function (req, res, next) {
+router.get("/businesscontacts", function (req, res, next) {
   res.render("businesscontacts", { title: "Business Contacts" });
 });
 
-router.get("/contact", function (req, res, next) {
+router.get("/login", function (req, res, next) {
   res.render("login", { title: "Login" });
 });
 
