@@ -34,4 +34,8 @@ router.get("/login", function (req, res, next) {
   res.render("login", { title: "Login" });
 });
 
+router.get("/game", function (req, res, next) {
+  res.render("game", { title: "Games" });
+});
+
 module.exports = router;
