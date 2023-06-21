@@ -9,6 +9,7 @@ let logger = require('morgan');
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
 let gamesRouter = require('../routes/games');
+let contactsRouter = require('../routes/contacts');
 
 // databse setup
 let mongoose = require('mongoose');
@@ -39,6 +40,7 @@ app.use(express.static(path.join(__dirname, '../../node_modules')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/game-list', gamesRouter);
+app.use('/contacts', contactsRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -1,0 +1,34 @@
+<%- include('./partials/header.ejs') %>
+<%- include('./partials/nav_bar.ejs') %>
+
+<h1 class="center"><%= title %></h1>
+
+<main class="container">
+
+    <table class="table">
+        <tr>
+            <th>Contact Name</th>
+            <th>Contact Number</th>
+            <th>Contact Email</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <% for (let count = 0; count < ContactsList.length; count++) { %>
+            <tr>
+                <td><%= ContactsList[count].name %></td>
+                <td><%= ContactsList[count].number %></td>
+                <td><%= ContactsList[count].email %></td>
+                <td>
+                    <a class="button" href="/contacts/edit/<%=ContactsList[count]._id %>">Update Contact</a>
+                </td>
+                <td>
+                    <a class="button" href="/contacts/delete/<%=ContactsList[count]._id %>">Delete Contact</a>
+                </td>
+            </tr>
+        <% } %> 
+        <tr>
+        </tr>
+    </table>
+</main>
+
+<%- include('./partials/footer.ejs') %>
