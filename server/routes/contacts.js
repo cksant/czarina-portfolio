@@ -57,6 +57,7 @@ router.get('/delete/:id', async(req, res, next) => {
     try {
         await Contacts.findByIdAndRemove(id);
         res.redirect('/contacts');
+        console.log('complete');
     } catch (err) {
         console.log(err);
         res.status(500).send(err);

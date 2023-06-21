@@ -1,8 +1,5 @@
 <%- include partials/header.ejs %>
 <%- include partials/nav_bar.ejs %>
-<%- include ../partials/header.ejs %>
-
-<%- include ../partials/main_nav.ejs %>
 
 <div class="container">
     <div class="row">
@@ -16,7 +13,7 @@
                     id="nameTextField"
                     placeholder="Enter the name"
                     name="name" 
-                    value="<%= contacts.name %>"
+                    value="<%= Contact.name %>"
                     required>
                 </div>
 
@@ -26,7 +23,7 @@
                     id="numberTextField"
                     placeholder="Enter your number"
                     name="number" 
-                    value="<%= contacts.number %>"
+                    value="<%= Contact.number %>"
                     required>
                 </div>
 
@@ -36,7 +33,7 @@
                     id="emailTextField"
                     placeholder="Enter your e-mail"
                     name="email" 
-                    value="<%= contacts.email %>"
+                    value="<%= Contact.email %>"
                     required>
                 </div>
 
@@ -54,5 +51,4 @@
 </div>
 
 
-<%- include ../partials/footer.ejs %>
 <%- include partials/footer.ejs %>
